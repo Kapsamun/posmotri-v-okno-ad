@@ -23,19 +23,7 @@ img {
   max-width: 100%;
 }
 
-/* Кастомный скроллбар */
-.content__list-container::-webkit-scrollbar {
-  width: 6px;
-}
 
-.content__list-container::-webkit-scrollbar-track {
-  background: #1b1919;
-}
-
-.content__list-container::-webkit-scrollbar-thumb {
-  background: #545050;
-  border-radius: 3px;
-}
 
 .page {
   inline-size: 1200px;
@@ -67,6 +55,19 @@ ol {
 }
 
 /* Кастомный скроллбар */
+.content__list-container::-webkit-scrollbar {    /*Главный список видео*/
+  width: 6px;
+}
+
+.content__list-container::-webkit-scrollbar-track {
+  background: #1b1919;
+}
+
+.content__list-container::-webkit-scrollbar-thumb {
+  background: #545050;
+  border-radius: 3px;
+}
+
 .custom-scrollbar::-webkit-scrollbar {
   width: 4px;
 }
@@ -89,16 +90,19 @@ ol {
 /* Сетка контента */
 .content {
   display: grid;
-  grid-template-columns: 1fr min-content;
+  /*grid-template-columns: 1fr min-content;
   grid-template-areas: 
     "header header"
     "details list";
-  gap: 80px;
-  max-width: 1440px;
-  width: 100%;
+  gap: 80px;*/
+  grid-template-columns: 711px 399px;
+  column-gap: 30px;
+  width: 1140px;
+ /* max-width: 1440px;
+  width: 100%;*/
 }
 
-.header {
+/*.header {
   grid-area: header;
 }
 
@@ -108,7 +112,7 @@ ol {
 
 .content__list {
   grid-area: list;
-}
+}*/
 
 /* Форма поиска */
 .search-form {
